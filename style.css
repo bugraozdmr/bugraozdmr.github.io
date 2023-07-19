@@ -76,12 +76,20 @@ section{
     font-weight: 600;
     color:white;
     margin-bottom: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .hero-text p{
     color: white;
     font-size: 15px;
     line-height: 1.9;
     margin-bottom: 40px;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 .hero-img{
     width: 700px;
@@ -182,7 +190,7 @@ section{
         margin-bottom: 25px;
     }
 }
-@media(max-width: 1195px){
+@media(max-width: 1230){
     section{
         padding: 0 3%;
         transition: .2s;
@@ -195,7 +203,7 @@ section{
     }
     .hero-img img{
         width: 560px;
-        height: auto;
+        display: none;
     }
     .hero{
         height: 100%;
@@ -209,36 +217,54 @@ section{
         display: none;
     }
 }
-@media(max-width: 990px){
-    #menu-icon{
+
+@media screen and (max-width: 990px) {
+    #menu-icon {
         display: block;
     }
-    .nav-links{
+    .hero-img {
+        display: none;
+    }
+    .hero-text {
+        align-items: center;
+    }
+    .nav-links {
         position: absolute;
-        top:100%;
+        top: 100%;
         right: -100%;
-        width: 300px;
+        width: 100%;
         height: 40vh;
         background-color: #4d9559;
         display: flex;
         align-items: center;
+        justify-content: center;
+        transition: all 0.55s ease;
+    }
+    .nav-links ul {
+        display: flex;
         flex-direction: column;
-        padding: 50px 20px;
-        transition: all .55s ease;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
     }
-    .nav-links a{
-        display: block;
-        margin-left: 0;
-        display: block;
-        margin: 7px 0;
+    .nav-links ul li {
+        margin: 10px 0;
     }
-    .nav-links.open{
+    .nav-links a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+        color: #133917;
+        background-color: white;
+    }
+    .nav-links.open {
         right: 0;
-    }
-}
-@media(max-width: 680px){
-    .hero-img img{
-        width: 100%;
-        height: auto;
     }
 }
