@@ -67,7 +67,7 @@ section{
 .hero-text h1{
     font-family: 'Goblin One', cursive;
     font-size: 90px;
-    line-height: 1;
+    line-height: 0.8;
     color: white;
     margin: 0 0 45px;
 }
