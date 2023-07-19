@@ -250,6 +250,7 @@ section{
         align-items: center;
         justify-content: center;
         transition: all 0.55s ease; 
+        padding-right: 10%;
     }
     .nav-links ul {
         display: flex;
@@ -268,6 +269,7 @@ section{
         color: white;
         font-size: 2em;
         text-align: center;
+        padding-right: 20%;
         padding: 10px;
         text-decoration: none;
         transition: all 0.3s ease;
@@ -288,6 +290,4 @@ section{
         display: inline-block;
         margin: 10px 20px 10px 0;
     }
-    
-    
 }
