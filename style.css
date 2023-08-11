@@ -208,7 +208,8 @@ section{
         display: none;
     }
     .hero{
-        height: 100%;
+        background-size: inherit;
+/*         height: 100%; */
         gap: 1rem;
         grid-template-columns: 1fr;
     }
@@ -228,6 +229,7 @@ section{
         display: block;
     }
     .hero {
+        background-size: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
